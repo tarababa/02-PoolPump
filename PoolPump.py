@@ -49,7 +49,7 @@ while True:
     else:
         #ON/OFF switch is set to ON
         LedYellow.on() #Pump is "armed"
-        LedRed.on()    #Programming running
+        LedRed.on()    #Program running
         if BlueButton.is_held:                                 #blue button pushed
             if not PoolPump.is_active:                         #poolpump not running
                 PoolPump.blink(on_time=3600, off_time=0, n=1)  #run pump for an hour
